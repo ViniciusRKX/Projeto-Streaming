@@ -10,6 +10,7 @@ body {
 }
 
 header {
+  background-color: #01050d;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,8 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 300px;
+  padding: 10px 300px;
   z-index: 100;
+  backdrop-filter: blur(1px);
 }
 header .logo img {
   max-width: 150px;
@@ -65,12 +67,80 @@ header .logo img {
   padding: 0 10px;
 }
 
-footer img {
-  height: 32px;
+#tituloPagina {
+  margin: 40px 40px 15px 40px;
+  margin-top: 7%;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 20px;
+  z-index: 999;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+}
+
+
+.banner img {
+  border-radius: 8px;
+}
+
+.content {
+  width: 250px;
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  flex-flow: column nowrap;
+  top: 35%;
+  left: 17%;
+}
+.content img {
+  max-width: 190px;
+}
+
+.content p {
+  color: white;
+}
+
+.content a {
+  text-decoration: none;
+  background: #fff;
+  color: #01050d;
+  width: 160px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+}
+
+.content a:hover {
+  transform: scale(1.05);
+}
+
+.topfilmes h1 {
+  color: #fff;
+  font-size: 20px;
+  margin: 40px 40px 15px 40px;
+  padding: 20px;
+}
+.topfilmes span {
+  color: #1a98ff;
+}
+
+
+.top3 img {
+  width: 250px;
+  height: 140px;
+  border-radius: 8px;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -79,7 +149,9 @@ footer {
   font-size: 15px;
   padding: 24px;
 }
-
+footer img {
+  height: 32px;
+}
 footer a {
   text-decoration: none;
   color: #79b8f3;
