@@ -89,7 +89,7 @@ header .logo img {
 .banner {
   position: relative;
   border-radius: 8px;
-  background-image: url(/Projeto-Streaming/Home/img/super-mario-bros-o-filme-capa.jpeg);
+  background-image: url(../img/super-mario-bros-o-filme-capa.jpeg);
   background-size: cover;
   margin: 0px 110px;
 }
