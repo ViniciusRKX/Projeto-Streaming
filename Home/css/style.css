@@ -11,20 +11,24 @@ body {
 
 header {
   background-color: #01050d;
+  display: flex;
   position: fixed;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
   top: 0;
   left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 200px;
+  padding: 10px 20px;
   z-index: 100;
   backdrop-filter: blur(1px);
+  margin-top: 0.5%;
+  margin-left: 15%;
+  border-radius: 19px;
 }
 header .logo img {
   max-width: 150px;
 }
+
 
 .navigation {
   display: flex;
@@ -84,39 +88,46 @@ header .logo img {
 }
 .banner {
   position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.banner img {
   border-radius: 8px;
+  background-image: url(/Projeto-Streaming/Home/img/super-mario-bros-o-filme-capa.jpeg);
+  background-size: cover;
+  margin: 0px 110px;
 }
 
-.gradiente {
-  position: relative;
+.gradient {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(210, 210, 210, 0) 90%
+  );
 }
-
 i {
   color: #aaa;
 }
 
+.content .bi-play-circle {
+  color: #01050d;
+}
 .content {
-  width: 250px;
-  position: absolute;
+  position: relative;
+  width: 560px;
+  height: 500px;
   display: flex;
   gap: 15px;
   flex-flow: column nowrap;
-  top: 229px;
-  left: 230px;
+  top: 55px;
+  left: 80px;
 }
 .content img {
-  max-width: 190px;
+  max-width: 250px;
 }
-
+.content span {
+  color: white;
+}
 .content p {
   color: white;
+  text-align: justify;
 }
 
 .content a {
@@ -143,13 +154,19 @@ i {
 .topfilmes span {
   color: #1a98ff;
 }
+.top4 {
+  display: flex;
+  justify-content: center;
+}
+
 .grade {
-display: flex;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .group {
   display: flex;
   justify-content: start;
-  margin-left: 40px;
   position: relative;
   transition-duration: 0.3s;
 }
@@ -175,8 +192,7 @@ display: flex;
 
 .catalog {
   display: flex;
-  justify-content: start;
-  margin-left: 40px;
+  justify-content: center;
   position: relative;
   transition-duration: 0.3s;
 }
@@ -195,7 +211,8 @@ display: flex;
 
 footer {
   position: relative;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 20px;
   text-align: center;
   width: 100%;
   bottom: 10px;
