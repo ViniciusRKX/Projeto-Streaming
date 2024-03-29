@@ -1,12 +1,12 @@
-#area-filmes { padding: 5% }
-.filmes {
-    display: grid;
+#area-filmes { padding: 0% 70px
+}
+.filmes { display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, minmax(32%, 50%))
+    grid-template-columns: repeat(3, 32%)
 }
-.catalog img { width: 100% }
-.filmes-text {
-    color: white;
-    padding: 2% 0%
+.catalog img { width: 100%
 }
-.area { text-decoration: none }
+.filmes-text { color: white
+}
+.area { text-decoration: none
+}
