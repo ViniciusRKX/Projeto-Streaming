@@ -6,11 +6,12 @@
 }
 
 body {
-  background-color: #01050d;
+  background-color: rgba(1, 5, 13, 1);
 }
 
 header {
-  background-color: #01050d;
+  /* background-color: #01050d; */
+  background-color: rgba(1, 5, 13, 0.8);
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -20,7 +21,7 @@ header {
   left: 0;
   padding: 10px 20px;
   z-index: 100;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(3px);
   margin-top: 0.5%;
   margin-left: 15%;
   border-radius: 19px;
@@ -28,7 +29,6 @@ header {
 header .logo img {
   max-width: 150px;
 }
-
 
 .navigation {
   display: flex;
@@ -89,9 +89,9 @@ header .logo img {
 .banner {
   position: relative;
   border-radius: 8px;
-  background-image: url(../img/super-mario-bros-o-filme-capa.jpeg);
+  background-image: url(../assets/banner/super-mario-bros-o-filme-capa.jpeg);
   background-size: cover;
-  margin: 0px 110px;
+  margin: 0px 90px;
 }
 
 .gradient {
@@ -101,6 +101,7 @@ header .logo img {
     rgba(2, 0, 36, 1) 0%,
     rgba(210, 210, 210, 0) 90%
   );
+  border-radius: 5px;
 }
 i {
   color: #aaa;
@@ -146,28 +147,35 @@ i {
 }
 
 .topfilmes h1 {
+  position: relative;
   color: #fff;
   font-size: 20px;
   margin: 30px 40px 15px 40px;
+
   padding: 20px;
 }
 .topfilmes span {
   color: #1a98ff;
 }
-.top4 {
+.top5 {
   display: flex;
   justify-content: center;
+  position: relative;
+  left: -30px;
+}
+
+.topAlter h1::after {
+  content: "Top 5 hoje";
 }
 
 .grade {
   display: flex;
   justify-content: center;
   gap: 30px;
+  transform: scale(1.09);
 }
 .group {
   display: flex;
-  justify-content: start;
-  position: relative;
   transition-duration: 0.3s;
 }
 .group:hover {
@@ -178,11 +186,9 @@ i {
   width: 250px;
   height: 140px;
   border-radius: 8px;
-  z-index: 0;
   position: relative;
 }
 .group span {
-  height: 140px;
   position: relative;
   top: -12px;
   left: 25px;
@@ -232,4 +238,34 @@ footer li {
   list-style: none;
   display: inline-block;
   padding-right: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .grade {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .grade {
+    transform: scale(0.87);
+    gap: 30px;
+  }
+  .catalogExtra {
+    display: none;
+  }
+
+  .groupExtra {
+    display: none;
+  }
+
+  .topAlter h1::after {
+    content: "Top 4 hoje";
+  }
+  .top5 {
+    transform: scale(0.86);
+  }
+ 
 }
