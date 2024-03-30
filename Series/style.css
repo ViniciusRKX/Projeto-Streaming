@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+h1{
+    color: white;
+    margin-top:40px ;
+    padding: 60px;
+}
+
+
+.container-series{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 35px 15px;
+    padding: 50px;
+    text-align: start;
+    justify-content: center;
+}
+.catalogo:hover {
+    transform: scale(1.05);
+  }
+  
+.catalogo img{
+width: 300px;
+border-radius: 4px;
+}
+
+.campo{
+    text-decoration: none;
+}
+.texto-series{
+    color: white;
+}
