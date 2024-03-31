@@ -1,12 +1,14 @@
-#area-filmes { padding: 0% 70px
-}
 .filmes { display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 32%)
+    grid-template-columns: repeat(4, 1fr);
+    text-align: start;
+    gap: 35px 15px;
+    margin: 50px 8%
 }
-.catalog img { width: 100%
+.catalog img { width: 300px;
+    border-radius: 4px;
 }
-.filmes-text { color: white
+.filmes-text { color: white;
+    overflow: hidden;
 }
 .area { text-decoration: none
 }
