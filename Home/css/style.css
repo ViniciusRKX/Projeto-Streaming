@@ -173,6 +173,7 @@ i {
 }
 
 .grade {
+ 
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -229,16 +230,21 @@ i {
   position: relative;
 }
 
+main {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 footer {
   position: relative;
   margin: auto;
   margin-top: 20px;
   text-align: center;
   width: 100%;
-  bottom: 10px;
   display: inline-block;
   font-size: 15px;
-  padding: 24px;
+  padding: 24px ;
 }
 footer img {
   height: 32px;
