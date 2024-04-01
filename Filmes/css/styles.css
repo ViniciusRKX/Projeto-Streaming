@@ -85,6 +85,14 @@
     gap: 35px 15px;
     margin: 50px ;
 }
+
+.catalog {
+  transition-duration: 0.3s;
+}
+.catalog:hover {
+  transform: scale(1.05);
+}
+
 .catalog img { width: 300px;
     border-radius: 4px;
 }
