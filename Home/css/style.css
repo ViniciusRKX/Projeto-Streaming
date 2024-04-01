@@ -27,7 +27,7 @@ header {
   border-radius: 19px;
 }
 header .logo img {
-  max-width: 150px;
+  max-width: 130px;
 }
 
 .navigation {
@@ -95,10 +95,10 @@ header .logo img {
 }
 
 .gradient {
-  background: rgb(2, 0, 36);
+  background: rgb(1, 5, 13);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
+    rgba(1, 5, 13, 1) 0%,
     rgba(210, 210, 210, 0) 90%
   );
   border-radius: 5px;
@@ -146,6 +146,10 @@ i {
   transform: scale(1.05);
 }
 
+.describ  span{
+  margin-right: 5px;
+}
+
 .topfilmes h1 {
   position: relative;
   color: #fff;
@@ -187,6 +191,16 @@ i {
   height: 140px;
   border-radius: 8px;
   position: relative;
+}
+
+.group a {
+  text-decoration: none;
+}
+
+.group p {
+  color: #aaa;
+  font-size: 14px;
+  margin-left: 10px;
 }
 .group span {
   position: relative;
@@ -240,13 +254,24 @@ footer li {
   padding-right: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1800px) {
   .grade {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
 }
+@media screen and (max-width: 1710px) {
+  .grade {
+   transform: scale(0.99);
+   gap: 30px;
+ }
+ .top5 {
+  transform: scale(0.89)
+ }
+}
+
 
 @media screen and (max-width: 1400px) {
   .grade {
