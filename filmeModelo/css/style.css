@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Amazon Ember", sans-serif;
+  box-sizing: border-box;
+}
+
+i {
+  color: #aaa;
+}
+
+body {
+  background-color: rgba(1, 5, 13, 1);
+  font-family: "Amazon Embrier", sans-serif;
+}
+
+header {
+  background-color: #01050d;
+  background-color: rgba(1, 5, 13, 0.8);
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  z-index: 100;
+  backdrop-filter: blur(3px);
+  margin-top: 0.5%;
+  margin-left: 15%;
+  border-radius: 19px;
+}
+
+header .logo img {
+  max-width: 150px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navigation li:hover a {
+  color: white;
+}
+
+.search {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.search input {
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+}
+
+.search .bi-search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  padding-right: 50px;
+}
+
+.bi-chat-left-text-fill {
+  color: #ffffff;
+}
+
+#premiacao {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  margin-left: 85px;
+  top: 110px;
+}
+
+.tittle-filme {
+  color: #ffffff;
+  font-family: "Amazon Embrier", sans-serif;
+  margin-left: 85px;
+  margin-top: 135px;
+}
+
+.banner {
+  background-image: url(../assets/banner/o-lobo-de-wall-mario-street-capa-filmeModelo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 501px;
+  position: relative;
+  margin-top: 85px;
+}
+
+.gradient {
+  background: rgb(1, 5, 13);
+  background: linear-gradient(90deg,
+      rgba(1, 5, 13, 1) 0%,
+      rgba(210, 210, 210, 0) 90%),
+    linear-gradient(0deg,
+      rgba(1, 5, 13, 1) 0%,
+      rgba(210, 210, 210, 0) 90%);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 1000px;
+  height: 501px;
+}
+
+.sinopse {
+  max-width: 80%;
+  margin-left: 85px;
+  margin-top: 30px;
+
+  p {
+    color: #ffffff;
+    font-family: "Amazon Ember", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.date-time {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: start;
+  justify-items: center;
+  margin-left: 85px;
+  margin-top: 12px;
+  gap: 15px;
+}
+
+#raio-x {
+  color: #ffffff;
+  background: #33373D;
+  font-family: "Amazon Ember", "Amazon Arabic Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.diretor {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  justify-items: center;
+  margin-left: 85px;
+  margin-top: 12px;
+}
+
+.elenco {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  justify-items: center;
+  margin-left: 85px;
+  margin-top: 12px;
+}
+
+#tipo-filme {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 500;
+  position: relative;
+  left: 85px;
+  top: 8px;
+}
+
+.trailer a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Amazon Embrier", sans-serif;
+  background: #33373D;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 85px;
+  top: 27px;
+}
+
+.comentario {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 80px;
+}
+
+.comentario span {
+  color: #999999;
+  position: relative;
+  left: 950px;
+  bottom: 22px;
+}
+
+.comentario h2 {
+  color: #ffffff;
+  margin-left: 85px;
+  font-weight: 300;
+}
+
+.comentario textarea {
+  color: #ffffff;
+  background: rgba(16, 20, 27, 0.8);
+  border-style: none;
+  resize: none;
+  width: 45%;
+  height: 100px;
+  position: relative;
+  left: 85px;
+  top: 10px;
+  padding: 10px;
+}
+
+.comentario button {
+  background: rgba(16, 20, 27, 0.8);
+  color: #999999;
+  border-style: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  top: 30px;
+  left: 85px;
+  padding: 3px;
+}
+
+
+footer {
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+  display: inline-block;
+  font-size: 15px;
+  padding: 24px;
+}
+
+footer img {
+  height: 32px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #79b8f3;
+}
+
+footer li {
+  color: #8197a4;
+  list-style: none;
+  display: inline-block;
+  padding-right: 20px;
+}
