@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner-Tb {
+  border-radius: 8px;
+  background-image: url(../Series/img-amazon/TheBoys.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+  object-fit: cover;
+}
+.content-Tb {
+  display: flex;
+  height: 850px;
+  padding: 20px;
+  position: relative;
+  top: 135px;
+  left: 80px;
+  flex-flow: column nowrap;
+}
+.gradient-Tb {
+  background: rgb(1, 5, 13);
+  background: linear-gradient(
+      90deg,
+      rgba(1, 5, 13, 1) 0%,
+      rgba(210, 210, 210, 0) 90%
+    ),
+    linear-gradient(0deg, rgba(1, 5, 13, 1) 0%, rgba(210, 210, 210, 0) 90%);
+}
+
+.content-Tb img {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;
+  margin-bottom: 20px;
+}
+.content-Tb .movieTitle {
+  max-width: 250px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+p {
+  color: white;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+span {
+  color: grey;
+  padding: 4px;
+ 
+}
+ .content-Tb a {
+  text-decoration: none;
+  background-color: rgb(150, 150, 150);
+  color: white;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 8px;
+}
