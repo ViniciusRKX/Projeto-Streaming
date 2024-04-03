@@ -89,51 +89,51 @@ header .logo img {
   color: #ffffff;
 }
 
+.banner {
+  background-image: url(../assets/banner/o-lobo-de-wall-mario-street-capa-filmeModelo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  position: relative;
+  margin-top: 90px;
+}
+
+.gradient {
+  background: rgb(1, 5, 13);
+  background: linear-gradient(
+      90deg,
+      rgba(1, 5, 13, 1) 0%,
+      rgba(210, 210, 210, 0) 90%
+    ),
+    linear-gradient(0deg, rgba(1, 5, 13, 1) 35%, rgba(210, 210, 210, 0) 90%);
+}
+
 #premiacao {
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
   position: relative;
-  margin-left: 85px;
+
   top: 110px;
 }
 
 .tittle-filme {
   color: #ffffff;
   font-family: "Amazon Embrier", sans-serif;
-  margin-left: 85px;
+
   margin-top: 135px;
 }
-
-.banner {
-  background-image: url(../assets/banner/o-lobo-de-wall-mario-street-capa-filmeModelo.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 501px;
-  position: relative;
-  margin-top: 85px;
-}
-
-.gradient {
-  background: rgb(1, 5, 13);
-  background: linear-gradient(90deg,
-      rgba(1, 5, 13, 1) 0%,
-      rgba(210, 210, 210, 0) 90%),
-    linear-gradient(0deg,
-      rgba(1, 5, 13, 1) 0%,
-      rgba(210, 210, 210, 0) 90%);
-}
-
 .content {
+  margin-left: 85px;
   position: relative;
   z-index: 2;
   width: 1000px;
-  height: 501px;
+  height: 750px;
 }
 
 .sinopse {
   max-width: 80%;
-  margin-left: 85px;
+
   margin-top: 30px;
 
   p {
@@ -152,14 +152,14 @@ header .logo img {
   display: flex;
   justify-content: start;
   justify-items: center;
-  margin-left: 85px;
+
   margin-top: 12px;
   gap: 15px;
 }
 
 #raio-x {
   color: #ffffff;
-  background: #33373D;
+  background: #33373d;
   font-family: "Amazon Ember", "Amazon Arabic Ember", Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -174,7 +174,7 @@ header .logo img {
   display: flex;
   justify-content: start;
   justify-items: center;
-  margin-left: 85px;
+
   margin-top: 12px;
 }
 
@@ -185,30 +185,87 @@ header .logo img {
   display: flex;
   justify-content: start;
   justify-items: center;
-  margin-left: 85px;
+
   margin-top: 12px;
 }
 
 #tipo-filme {
   font-size: 18px;
-  color: #999999;
-  font-weight: 500;
-  left: 85px;
-  position: relative;
- 
-}
-
-.trailer a {
-  position: relative;
-  text-decoration: none;
+  background: #33373d;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Amazon Embrier", sans-serif;
-  background: #33373D;
+  padding: 3px 5px;
+  margin-top: 3px;
   border-radius: 4px;
-  padding: 10px;
-  margin-left: 85px;
-  top: 27px;
+  border: none;
+  margin-top: 5px;
+}
+
+.bi-play-circle-fill {
+  font-size: 75px;
+  color: #fff;
+  /* left: 100px;
+  top: -120px; */
+  transition: 0.5s;
+}
+
+.bi-play-circle-fill:hover {
+  color: #999999;
+}
+
+.trailer .bi-film {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  color: #fff;
+  /* left: 150px;
+  top: -100px; */
+  transition: 0.5s;
+}
+
+.trailer .bi-film:hover {
+  color: #999999;
+}
+
+.bi-hand-thumbs-up-fill {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  /* left: 165px;
+  top: -100px; */
+  transition: 0.5s;
+}
+.bi-hand-thumbs-up-fill:active {
+  color: #999999;
+}
+.trailer {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  top: 460px;
+}
+
+.bi-chat-left-text-fill {
+  color: #ffffff;
+}
+.grupo a {
+  text-decoration: none;
+}
+.grupo span {
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+#trailer {
+  position: relative;
+  top: 20px;
+  left: -4px;
+}
+
+.bi-chat-left-text-fill {
+  color: #ffffff;
 }
 
 .comentario {
@@ -216,13 +273,12 @@ header .logo img {
   flex-flow: column nowrap;
   margin-top: 60px;
 }
-
 .comentario span {
   color: #999999;
   position: relative;
   left: 950px;
   bottom: 22px;
-  width: 00px;
+  width: 300px;
 }
 
 .comentario h2 {
@@ -249,14 +305,14 @@ header .logo img {
   color: #999999;
   border-style: none;
   border-radius: 5px;
-  width: 80px;
+  width: 100px;
   height: 25px;
   position: relative;
   top: 30px;
   left: 85px;
   padding: 3px;
+  text-decoration: none;
 }
-
 
 footer {
   position: relative;

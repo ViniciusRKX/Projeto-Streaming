@@ -83,11 +83,8 @@ header .logo img {
   padding-right: 50px;
 }
 
-.bi-chat-left-text-fill {
-  color: #ffffff;
-}
 .banner-Tb {
-  background-image: url(./assets/logo/TheBoys.jpg);
+  background-image: url(../assets/banner/TheBoys.jpg);
   background-size: cover;
   width: 100%;
   height: 750px;
@@ -97,10 +94,9 @@ header .logo img {
 .content-Tb {
   display: flex;
   height: 850px;
-  padding: 20px;
   position: relative;
   top: 70px;
-  left: 80px;
+  margin-left: 85px;
   flex-flow: column nowrap;
   max-width: 1000px;
 }
@@ -111,7 +107,7 @@ header .logo img {
       rgba(1, 5, 13, 1) 0%,
       rgba(210, 210, 210, 0) 90%
     ),
-    linear-gradient(0deg, rgba(1, 5, 13, 1) 0%, rgba(210, 210, 210, 0) 90%);
+    linear-gradient(0deg, rgba(1, 5, 13, 1) 13%, rgba(210, 210, 210, 0) 90%);
 }
 
 .content-Tb img {
@@ -125,8 +121,8 @@ header .logo img {
   align-items: center;
   margin-bottom: 20px;
 }
+
 h2 {
-  margin-bottom: 20px;
   color: white;
 }
 h3 {
@@ -135,19 +131,32 @@ h3 {
   letter-spacing: 7px;
 }
 .content-Tb p {
-  color: white;
+  color: #ffffff;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
   text-align: justify;
- 
 }
 .info p {
   position: relative;
-  margin-top: 3px;
+  margin-top: 12px;
+  color: #999999;
+}
+
+#categoria button {
+  border: none;
 }
 #categoria {
   font-size: 18px;
-  color: #999999;
+  background: #33373d;
+  color: #ffffff;
   font-weight: 500;
+  padding: 3px 5px;
   margin-top: 3px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 5px;
 }
 
 .butter {
@@ -157,7 +166,7 @@ h3 {
   display: flex;
   justify-content: start;
   gap: 15px;
-  margin-top: 5px;
+  margin-top: 12px;
 }
 .estilo {
   color: #ffffff;
@@ -178,40 +187,69 @@ h3 {
   border-radius: 8px;
   text-align: center;
   padding-top: 8px;
-  
 }
 .bi-play-circle-fill {
   font-size: 75px;
   color: #fff;
-  position: relative;
-  left: 100px;
-  top: -120px; 
+  /* left: 100px;
+  top: -120px; */
   transition: 0.5s;
 }
-.trailer .bi-film{
+
+.bi-play-circle-fill:hover {
+  color: #999999;
+}
+
+.trailer .bi-film {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  color: #fff;
+  /* left: 150px;
+  top: -100px; */
+  transition: 0.5s;
+}
+
+.trailer .bi-film:hover {
+  color: #999999;
+}
+
+.bi-hand-thumbs-up-fill {
+  position: relative;
+  top: 20px;
   font-size: 40px;
   color: #fff;
   position: relative;
-  left: 150px;
-  top: -100px; 
+  /* left: 165px;
+  top: -100px; */
   transition: 0.5s;
-
+}
+.bi-hand-thumbs-up-fill:active {
+  color: #999999;
 }
 .trailer {
   display: flex;
-}
-.bi-hand-thumbs-up{
-  font-size: 40px;
-  color: #fff;
-  position: relative;
-  left: 165px;
-  top: -100px; 
-  transition: 0.5s;
+  gap: 30px;
+  position: absolute;
+  top: 700px;
+  left: 85px;
 }
 
-.bi-hand-thumbs-up:hover {
-  transform: scale(1.3);
- 
+.bi-chat-left-text-fill {
+  color: #ffffff;
+}
+.grupo a {
+  text-decoration: none;
+}
+.grupo span {
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+#trailer {
+  position: relative;
+  top: 20px;
+  left: -4px;
 }
 
 .comentario {
