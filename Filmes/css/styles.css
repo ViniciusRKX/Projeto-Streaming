@@ -29,7 +29,9 @@
   header .logo img {
     max-width: 130px;
   }
-  
+  i {
+    color: #aaa;
+  }
   .navigation {
     display: flex;
   }
