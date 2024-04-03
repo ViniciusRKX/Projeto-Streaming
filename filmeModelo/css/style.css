@@ -193,9 +193,9 @@ header .logo img {
   font-size: 18px;
   color: #999999;
   font-weight: 500;
-  position: relative;
   left: 85px;
-  top: 8px;
+  position: relative;
+ 
 }
 
 .trailer a {
@@ -214,7 +214,7 @@ header .logo img {
 .comentario {
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .comentario span {
@@ -222,6 +222,7 @@ header .logo img {
   position: relative;
   left: 950px;
   bottom: 22px;
+  width: 00px;
 }
 
 .comentario h2 {
