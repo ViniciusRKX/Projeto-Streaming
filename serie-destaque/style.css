@@ -1,23 +1,108 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-family: "Amazon Ember", sans-serif;
+  box-sizing: border-box;
+}
+
+i {
+  color: #aaa;
+}
+body {
+  font-family: "Amazon Embrier", sans-serif;
+  background-color: rgba(1, 5, 13, 1);
+}
+header {
+  background-color: #01050d;
+  background-color: rgba(1, 5, 13, 0.8);
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  z-index: 100;
+  backdrop-filter: blur(3px);
+  margin-top: 0.5%;
+  margin-left: 15%;
+  border-radius: 19px;
+}
+
+header .logo img {
+  max-width: 150px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navigation li:hover a {
+  color: white;
+}
+
+.search {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.search input {
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+}
+
+.search .bi-search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  padding-right: 50px;
+}
+
+.bi-chat-left-text-fill {
+  color: #ffffff;
 }
 .banner-Tb {
-  border-radius: 8px;
-  background-image: url(../Series/img-amazon/TheBoys.jpg);
+  background-image: url(./assets/logo/TheBoys.jpg);
   background-size: cover;
   width: 100%;
-  height: 850px;
+  height: 750px;
   object-fit: cover;
+  margin-top: 90px;
 }
 .content-Tb {
   display: flex;
   height: 850px;
   padding: 20px;
   position: relative;
-  top: 135px;
+  top: 70px;
   left: 80px;
   flex-flow: column nowrap;
+  max-width: 1000px;
 }
 .gradient-Tb {
   background: rgb(1, 5, 13);
@@ -46,26 +131,159 @@ h2 {
 }
 h3 {
   margin-bottom: 20px;
-  color: white;
+  color: rgb(231, 224, 224);
+  letter-spacing: 7px;
 }
-p {
+.content-Tb p {
   color: white;
   text-align: justify;
-  margin-bottom: 20px;
-}
-span {
-  color: grey;
-  padding: 4px;
  
 }
- .content-Tb a {
+.info p {
+  position: relative;
+  margin-top: 3px;
+}
+#categoria {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.butter {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 5px;
+}
+.estilo {
+  color: #ffffff;
+  background: #33373d;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.content-Tb a {
   text-decoration: none;
-  background-color: rgb(150, 150, 150);
+  background: #33373d;
   color: white;
   width: 150px;
   height: 40px;
   margin-bottom: 15px;
-  border-radius: 4px;
+  border-radius: 8px;
   text-align: center;
   padding-top: 8px;
+  
+}
+.bi-play-circle-fill {
+  font-size: 75px;
+  color: #fff;
+  position: relative;
+  left: 100px;
+  top: -120px; 
+  transition: 0.5s;
+}
+.trailer .bi-film{
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  left: 150px;
+  top: -100px; 
+  transition: 0.5s;
+
+}
+.trailer {
+  display: flex;
+}
+.bi-hand-thumbs-up{
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  left: 165px;
+  top: -100px; 
+  transition: 0.5s;
+}
+
+.bi-hand-thumbs-up:hover {
+  transform: scale(1.3);
+ 
+}
+
+.comentario {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 60px;
+}
+.comentario span {
+  color: #999999;
+  position: relative;
+  left: 950px;
+  bottom: 22px;
+  width: 300px;
+}
+
+.comentario h2 {
+  color: #ffffff;
+  margin-left: 85px;
+  font-weight: 300;
+}
+
+.comentario textarea {
+  color: #ffffff;
+  background: rgba(16, 20, 27, 0.8);
+  border-style: none;
+  resize: none;
+  width: 45%;
+  height: 100px;
+  position: relative;
+  left: 85px;
+  top: 10px;
+  padding: 10px;
+}
+
+.comentario button {
+  background: rgba(16, 20, 27, 0.8);
+  color: #999999;
+  border-style: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  position: relative;
+  top: 30px;
+  left: 85px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+  display: inline-block;
+  font-size: 15px;
+  padding: 24px;
+}
+
+footer img {
+  height: 32px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #79b8f3;
+}
+
+footer li {
+  color: #8197a4;
+  list-style: none;
+  display: inline-block;
+  padding-right: 20px;
 }
